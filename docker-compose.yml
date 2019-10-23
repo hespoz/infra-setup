@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  api:
+    build:
+      context: ./api
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "5022:3333"
